@@ -1,5 +1,6 @@
 const express = require("express");
 const router = express.Router();
+const { authorize } = require("../middleware/roleMiddleware");
 
 const {
   registerUser,
@@ -19,5 +20,18 @@ router.get("/profile", protect, (req, res) => {
     user: req.user,
   });
 });
+
+router.get(
+  "/admin",
+  protect,
+  authorize("admin"),
+  (req, res) => {
+    res.json({
+      success: true,
+      message: "Welcome Admin 🚀",
+      user: req.user,
+    });
+  }
+);
 
 module.exports = router;
