@@ -5,6 +5,8 @@ const dotenv = require("dotenv");
 const authRoutes = require("./routes/authRoutes");
 const productRoutes = require("./routes/productRoutes");
 const dashboardRoutes = require("./routes/dashboardRoutes");
+const supplierRoutes = require("./routes/supplierRoutes");
+const purchaseRoutes = require("./routes/purchaseRoutes");
 
 
 const connectDB = require("./config/db");
@@ -21,6 +23,8 @@ app.use(express.json());
 app.use("/api/auth", authRoutes);
 app.use("/api/products", productRoutes);
 app.use("/api/dashboard", dashboardRoutes);
+app.use("/api/suppliers", supplierRoutes);
+app.use("/api/purchases", purchaseRoutes);
 
 app.get("/", (req, res) => {
     res.json({
