@@ -7,6 +7,7 @@ const productRoutes = require("./routes/productRoutes");
 const dashboardRoutes = require("./routes/dashboardRoutes");
 const supplierRoutes = require("./routes/supplierRoutes");
 const purchaseRoutes = require("./routes/purchaseRoutes");
+const saleRoutes = require("./routes/saleRoutes");
 
 
 const connectDB = require("./config/db");
@@ -25,6 +26,7 @@ app.use("/api/products", productRoutes);
 app.use("/api/dashboard", dashboardRoutes);
 app.use("/api/suppliers", supplierRoutes);
 app.use("/api/purchases", purchaseRoutes);
+app.use("/api/sales", saleRoutes);
 
 app.get("/", (req, res) => {
     res.json({

@@ -1,0 +1,10 @@
+[33m4a693e1[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m)[m Complete authentication, product management, and dashboard analytics
+[33ma768181[m Add Product model and RBAC authorization
+[33me1625b2[m feat(auth): add JWT middleware and protected routes
+[33m5cc5fb9[m feat(auth): implement JWT authentication
+[33md5c2194[m feat(auth): implement user registration with password hashing
+[33mca1a9e2[m feat: configure MongoDB connection
+[33m317a5f6[m feat: add MongoDB database connection
+[33m8f09cae[m Merge remote repository
+[33me6761cb[m Initial commit
+[33m9f79b72[m Initial project setup with MERN structure
